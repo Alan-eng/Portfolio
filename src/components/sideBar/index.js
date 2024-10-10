@@ -93,8 +93,8 @@ class SideBar extends Component {
                                 }
                             </button>
                             <div className={style.sideBarTitle}>
-                                <h1 className={style.sideBarHeader}>Alan Betanov</h1> <br />
-                                <small>(Frontend developer)</small>
+                                <h3 className={style.sideBarHeader}>Alan Betanov</h3>
+                                <h4 className={style.sideBarHeader}>Frontend developer</h4>
                             </div>
                             <div className={style.sideBarVerticalContainer}>
                                 <ul className={style.sideBarMenu}>
