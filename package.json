@@ -4,8 +4,8 @@
     "description": "portfolio website",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server --mode development --open",
-        "build": "webpack --mode production",
+        "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server --mode development --open",
+        "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && webpack --mode production",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],

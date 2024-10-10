@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollableAnchor from "react-scrollable-anchor"
-import { FaFly } from 'react-icons/fa';
+import { FaTelegram, FaEnvelope } from 'react-icons/fa';
 
 import Alan from './Alan.jpg';
 import style from './index.css';
@@ -18,14 +18,16 @@ const AboutMe = () => {
                 <img src={Alan} alt="portrait" />
                 <article className={style.menu}>
                     Hi, I’m Alan. Nice to meet you. <br />
-
-                    Since beginning my journey as a designer nearly 3 years ago, I've collaborated with many talented people to create digital products. I value simple content structure, clean design patterns, and thoughtful interactions.
-                    I play well with others and I'm happy to integrate into your existing team to help get your project implemented.
+                    I'm a frontend developer, creating responsive web applications and using popular libraries like Vue and React in my work.
+                    I've been coding HTML, CSS, and JavaScript for over 6 years.
+                    I create digital products that are pleasant to use.
+                    I love finding elegant solutions and work well in a team.
+                    Do you have an interesting project?
+                    Get in touch with me
 
                     <ul className={style.unstyledList}>
-                        <li>30 years old,</li>
-                        <li> St. Petersburg, Russia</li> <br />
-                        <li><FaFly /> willing to relocate</li>
+                        <li><FaTelegram /> telegram: @native_alan</li>
+                        <li><FaEnvelope /> alanb.develop@gmail.com</li>
                     </ul>
                 </article>
             </div>

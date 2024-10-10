@@ -104,7 +104,7 @@ class SideBar extends Component {
                                             className={this.state.activeLink === 'aboutMe' ? style.activeLink : style.link}
                                             href='#aboutMe'>
                                             <FaBeer /> &nbsp; About Me
-                                </a>
+                                        </a>
                                     </li>
                                     <li>
                                         <a
@@ -113,7 +113,7 @@ class SideBar extends Component {
                                             href='#technologies'
                                         >
                                             <FaHammer /> &nbsp; Technologies
-                                </a>
+                                        </a>
                                     </li>
                                     <li>
                                         <a
@@ -122,7 +122,7 @@ class SideBar extends Component {
                                             href='#projects'
                                         >
                                             <FaHandsHelping /> &nbsp; Projects
-                                </a>
+                                        </a>
                                     </li>
                                     <li>
                                         <a
@@ -131,15 +131,10 @@ class SideBar extends Component {
                                             href='#contacts'
                                         >
                                             <FaPenAlt /> &nbsp; Contacts
-                                </a>
+                                        </a>
                                     </li>
                                 </ul>
                                 <ul className={style.linksToOtherResourses}>
-                                    <li>
-                                        <a className={style.link} href='https://www.behance.net/Alan-eng' target='_blank'>
-                                            <FaBehance />
-                                        </a>
-                                    </li>
                                     <li>
                                         <a className={style.link} href='https://github.com/Alan-eng/' target='_blank'>
                                             <FaGithub />

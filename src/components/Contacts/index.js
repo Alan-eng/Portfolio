@@ -2,6 +2,7 @@ import React from 'react'
 import ScrollableAnchor from "react-scrollable-anchor"
 import gmailIcon from './gmailIcon.svg';
 import style from './index.css';
+import { FaTelegram, FaEnvelope } from 'react-icons/fa';
 
 const Contacts = () => (
     <section className={style.contacts}>
@@ -11,13 +12,11 @@ const Contacts = () => (
             </ScrollableAnchor >
             <p>If you have any question, or just want to say hello, feel free to contact me ;)</p>
             <ul className={style.contactsUl}>
-
                 <img src={gmailIcon} className={style.envelope} />
-                <li className={style.contact}>alanb.develop@gmail.com</li>
-
+                <li><FaTelegram /> telegram: @native_alan</li>
+                <li><FaEnvelope /> alanb.develop@gmail.com</li>
             </ul>
         </div>
-        ©2019 Betanov Alan
     </section>
 )
 

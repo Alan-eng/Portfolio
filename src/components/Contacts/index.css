@@ -14,8 +14,8 @@
 .contactsUl {
   margin-top: 74px;
   padding: 0;
-  color: #fff;
   list-style-type: none;
+  line-height: 2rem;
 }
 
 .contact {

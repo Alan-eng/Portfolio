@@ -99,6 +99,18 @@
   border-color: #61dafb;
 }
 
+.hexagonVue {
+  color: #17c090;
+  background-color: #261300;
+  border-color: #17c090;
+}
+
+.hexagonNuxt {
+  color: #17c090;
+  background-color: #ffffff;
+  border-color: #17c090;
+}
+
 .hexagonRedux {
   color: #6d44b3;
   background-color: #08003f;

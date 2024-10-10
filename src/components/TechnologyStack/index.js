@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import ScrollableAnchor from "react-scrollable-anchor"
 import Hexagon from './HexagonInteractive'
 import react from './images/react.svg';
+import vue from './images/vue.svg';
+import nuxt from './images/nuxt.svg';
 import redux from './images/redux.svg';
 import reduxSaga from './images/redux-saga.svg';
 import nodeJS from './images/nodeJS.svg';
@@ -89,7 +91,7 @@ class TechnologyStack extends Component {
                                 animatedLabel === 'JS' ?
                                     <span className={`${style.label} ${style.typeAnimation}`}>
                                         dynamic user experience
-                                </span> : null
+                                    </span> : null
                             }
                         >
                             <span style={{ fontSize: '24px', fontWeight: 'bold' }}>JS</span>
@@ -143,6 +145,56 @@ class TechnologyStack extends Component {
                             }
                         >
                             <img style={{ width: '40px' }} src={react} className="react-logo" alt="react-logo" />
+                        </Hexagon>
+                        <Hexagon
+                            key={'frontendStackHexagon3.1'}
+                            className="hexagonVue"
+                            isActive={animatedLabel === 'Vue' ? true : false}
+                            onMouseOver={() => {
+                                this.clearInterval();
+                                this.setLabel('Vue');
+                            }}
+                            onMouseLeave={() => {
+                                this.setInterval();
+                            }}
+                            labelStatic={
+                                <span className={`${style.labelStatic}`}>
+                                    Vue
+                                </span>
+                            }
+                            label={
+                                animatedLabel === 'Vue' ?
+                                    <span className={`${style.label} ${style.typeAnimation}`}>
+                                        Progressive JS Framework
+                                    </span> : null
+                            }
+                        >
+                            <img style={{ width: '40px' }} src={vue} className="vue-logo" alt="vue-logo" />
+                        </Hexagon>
+                        <Hexagon
+                            key={'frontendStackHexagon3.2'}
+                            className="hexagonNuxt"
+                            isActive={animatedLabel === 'Nuxt' ? true : false}
+                            onMouseOver={() => {
+                                this.clearInterval();
+                                this.setLabel('Nuxt');
+                            }}
+                            onMouseLeave={() => {
+                                this.setInterval();
+                            }}
+                            labelStatic={
+                                <span className={`${style.labelStatic}`}>
+                                    Nuxt
+                                </span>
+                            }
+                            label={
+                                animatedLabel === 'Nuxt' ?
+                                    <span className={`${style.label} ${style.typeAnimation}`}>
+                                        Intuitive Vue Framework
+                                    </span> : null
+                            }
+                        >
+                            <img style={{ width: '50px' }} src={nuxt} className="nuxt-logo" alt="nuxt-logo" />
                         </Hexagon>
                         <Hexagon
                             key={'frontendStackHexagon4'}
